@@ -9,7 +9,7 @@ int main() {
     //transfere objeto pra new
     unique_ptr<int> newp1 = move(p1);
     //shared_ptr<int> ptr = newp1; //compilador não permite
-    unique_ptr<int> ptr = &newp1; //também nao permite
+    //unique_ptr<int> ptr = &newp1; //também nao permite
 
     unique_ptr<int> p2(new int(10));
     

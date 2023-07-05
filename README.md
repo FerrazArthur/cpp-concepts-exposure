@@ -1,6 +1,6 @@
 # C++RoadMap
 
-Códigos e slides criados para compreensão e apresentação dos conceitos fundamentos e ferramental disponibilizado pelo c++.
+Esse repositório contém códigos com exemplos e slides, criados para compreensão e apresentação dos conceitos fundamentos e ferramental disponibilizado pelo c++, apresentados pela [road map c++](https://roadmap.sh/).
 
 ## Objetivos ilustrados
 
@@ -9,3 +9,7 @@ Códigos e slides criados para compreensão e apresentação dos conceitos funda
 [Uso de prototipagem e funções lambda vs funções tradicionais](lambda.cpp)
 
 [Uso de funções lambda com retorno e parâmetros: ponteiro vs referência](pointerRef.cpp)
+
+### Tipagem de dados
+
+[Uso de alocação dinamica com ponteiro void e typecast: c vs c++](dinamtype.cpp)

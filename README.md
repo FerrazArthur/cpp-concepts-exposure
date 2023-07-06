@@ -10,6 +10,8 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 
 [Uso de funções lambda com retorno e parâmetros: ponteiro vs referência](pointerRef.cpp)
 
+[Uso de referência para melhorar a legibilidade dos códigos](swapref.cpp)
+
 ### Tipagem de dados
 
 Verificações em runtime -> performance reduzida;
@@ -20,6 +22,6 @@ Verificações em runtime -> performance reduzida;
 
 [Uso de RTTI pra prevenir downcasting de ponteiros e slicing](rtii.cpp)
 
-Ponteiros Inteligêntes:
+### Ponteiros Inteligêntes
 
 [Uso de ponteiro tipo unique](uniqptr.cpp)

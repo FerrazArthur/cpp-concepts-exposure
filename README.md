@@ -12,5 +12,7 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 
 ### Tipagem de dados
 
+Verificações em runtime -> implicação em performance reduzida.
 [Uso de alocação dinamica com ponteiro void e typecast: c vs c++](dinamtype.cpp)
 [Uso de alocação dinamica com ponteiro any e tratamento de exceção](dinamc%2B%2B17.cpp)
+[Uso de RTTI pra prevenir downcasting de ponteiros e slicing](rtii.cpp)

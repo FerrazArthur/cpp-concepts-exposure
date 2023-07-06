@@ -4,11 +4,17 @@
 #include<any>
 
 using namespace std;
-
+/*
+O objetivo desse código é mostrar como o typecast any_cast funciona
+    e como utilizar o any_cast para evitar erros de compilação
+    e de execução, diferente do void* que não tem essa capacidade.
+*/
 int anycExe(any valorQualquer)
 {
     try
-    {
+    {   
+        //ao tentar fazer o typecast de um valor que não é double, 
+        //é lançada uma exceção
         cout<<"módulo de "<<any_cast<double>(valorQualquer)
         <<" é "
         << sqrt(any_cast<double>(valorQualquer)*any_cast<double>(valorQualquer))
@@ -23,8 +29,8 @@ int anycExe(any valorQualquer)
 }
 int main()
 {
-    anycExe("abc");
-    anycExe(13);
-    anycExe(13.9);
+    anycExe("abc"); //string não é double
+    anycExe(13); //int não é double
+    anycExe(13.9); //double é double
     return 0;
 }

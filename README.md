@@ -21,4 +21,5 @@ Verificações em runtime -> performance reduzida;
 [Uso de RTTI pra prevenir downcasting de ponteiros e slicing](rtii.cpp)
 
 Ponteiros Inteligêntes:
+
 [Uso de ponteiro tipo unique](uniqptr.cpp)

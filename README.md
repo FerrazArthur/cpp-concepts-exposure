@@ -25,3 +25,4 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 ### Ponteiros Inteligêntes
 
 [Uso de ponteiro tipo unique](uniqptr.cpp)
+[Uso do ponteiro tipo shared](sharedptr.cpp)

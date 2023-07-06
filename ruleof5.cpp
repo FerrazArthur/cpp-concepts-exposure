@@ -7,23 +7,25 @@ using namespace std;
 
 class rule_of_five
 {
-    char* cstring; // raw pointer used as a handle to a
-                   // dynamically-allocated memory block
+    char* cstring; // Ponteiro raw, utilizado como indicador de um
+                   // bloco de memória alocado dinamicamente
 public:
     virtual char* get () {return this->cstring;}
+    //construtor explicito
     explicit rule_of_five(const char* s = "") : cstring(nullptr)
     { 
         if (s)
         {
             size_t n = strlen(s) + 1;
-            cstring = new char[n];      // allocate
-            memcpy(cstring, s, n); // populate 
+            cstring = new char[n];      //alloca memoria
+            memcpy(cstring, s, n); // copia conteúdo
         } 
     }
- 
+    
+    //destrutor
     ~rule_of_five()
     {
-        delete[] cstring; // deallocate
+        delete[] cstring; //desaloca memoria
     }
  
     rule_of_five(const rule_of_five& other) // copy constructor
@@ -34,7 +36,7 @@ public:
  
     rule_of_five& operator=(const rule_of_five& other) // copy assignment
     {
-        return *this = rule_of_five(other);
+        return *this = rule_of_five(other);//chama o copy constructor
     }
  
     rule_of_five& operator=(rule_of_five&& other) noexcept // move assignment
@@ -44,8 +46,9 @@ public:
     }
 };
 
+//Código para imprimir o conteúdo de um objeto rule_of_five
 auto printrule(rule_of_five& a)
-{
+{//retorna '' se o ponteiro for nulo
     try{
         if (a.get() == nullptr)
             throw "nullptr";
@@ -67,7 +70,6 @@ int main()
     cout<<"a = "<<printrule(a)<<endl;
     cout<<"b = "<<printrule(b)<<endl;
     cout<<"c = "<<printrule(c)<<endl;
-
 
     rule_of_five d("Hello World!");
     rule_of_five e = move(d);

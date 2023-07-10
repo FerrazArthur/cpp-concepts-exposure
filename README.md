@@ -4,6 +4,8 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 
 ## Objetivos ilustrados
 
+O repositório acompanha [slides](Apresentacao.odp) utilizados para apresentação, onde as funções abaixo são referenciadas no decorrer do roadmap.
+
 ### Funções lambda e Prototipagem
 
 [Uso de prototipagem e funções lambda vs funções tradicionais](lambda.cpp)
@@ -14,13 +16,17 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 
 ### Tipagem de dados
 
-#### Verificações em runtime -> performance reduzida
+#### Verificações em tempo de execução -> performance reduzida
 
 [Uso de alocação dinamica com ponteiro void e typecast: c vs c++](dinamtype.cpp)
 
 [Uso de alocação dinamica com ponteiro any e tratamento de exceção](dinamc%2B%2B17.cpp)
 
 [Uso de RTTI pra prevenir downcasting de ponteiros e slicing](rtii.cpp)
+
+#### Verificações em tempo de compilação -> 'verbosidade' reduzida
+
+[Uso da palavra chave auto para reduzir complexidade de loops](autoverb.cpp)
 
 ### Ponteiros Inteligêntes
 
@@ -31,3 +37,11 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 [Uso do ponteiro tipo weak](weakptr.cpp)
 
 [Uso de valores apontados por ponteiro weak](weakptruse.cpp)
+
+### Boas práticas
+
+[Implementação da regra do cinco](ruleof5.cpp)
+
+[Uso de classes bases com construtor copia/movimentação implícitos implica em slicing](slicing.cpp)
+
+[Como impedir slicing em polimorfismo](slicingPrevent.cpp)

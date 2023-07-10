@@ -46,6 +46,10 @@ public:
     }
 };
 
+/*
+O objetivo desse código é ilustrar a diferença entre os operadores copia e movimentação.
+*/
+
 //Código para imprimir o conteúdo de um objeto rule_of_five
 auto printrule(rule_of_five& a)
 {//retorna '' se o ponteiro for nulo
@@ -66,19 +70,19 @@ int main()
     rule_of_five b = a;
     rule_of_five c(b);
 
-    // cout<<"após fazer copias:"<<endl;
-    // cout<<"a = "<<printrule(a)<<endl;
-    // cout<<"b = "<<printrule(b)<<endl;
-    // cout<<"c = "<<printrule(c)<<endl;
+    cout<<"após fazer copias:"<<endl;
+    cout<<"a = "<<printrule(a)<<endl;
+    cout<<"b = "<<printrule(b)<<endl;
+    cout<<"c = "<<printrule(c)<<endl;
 
-    // rule_of_five d("Hello World!");
-    // rule_of_five e = move(d);
-    // rule_of_five f(move(e));
+    rule_of_five d("Hello World!");
+    rule_of_five e = move(d);
+    rule_of_five f(move(e));
 
-    // cout<<"após mover:"<<endl;
-    // cout<<"d = "<<printrule(d)<<endl;
-    // cout<<"e = "<<printrule(e)<<endl;
-    // cout<<"f = "<<printrule(f)<<endl;
+    cout<<"após mover:"<<endl;
+    cout<<"d = "<<printrule(d)<<endl;
+    cout<<"e = "<<printrule(e)<<endl;
+    cout<<"f = "<<printrule(f)<<endl;
 
     return 0;
 }

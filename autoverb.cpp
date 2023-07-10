@@ -2,6 +2,10 @@
 #include <vector>
 using namespace std;
 
+/*
+Código objetiva ilustrar algumas das usabilidades do auto em C++.
+*/
+
 int main()
 {
     // forma tradicional de declarar una variavel
@@ -24,4 +28,5 @@ int main()
     {
         cout << *it << endl;
     }
+    return 0;
 }

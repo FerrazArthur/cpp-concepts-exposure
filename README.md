@@ -14,7 +14,7 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 
 ### Tipagem de dados
 
-#### Verificações em runtime -> performance reduzida;
+#### Verificações em runtime -> performance reduzida
 
 [Uso de alocação dinamica com ponteiro void e typecast: c vs c++](dinamtype.cpp)
 
@@ -27,3 +27,7 @@ Esse repositório contém códigos com exemplos e slides, criados para compreens
 [Uso de ponteiro tipo unique](uniqptr.cpp)
 
 [Uso do ponteiro tipo shared](sharedptr.cpp)
+
+[Uso do ponteiro tipo weak](weakptr.cpp)
+
+[Uso de valores apontados por ponteiro weak](weakptruse.cpp)

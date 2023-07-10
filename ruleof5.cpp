@@ -12,7 +12,7 @@ class rule_of_five
 public:
     virtual char* get () {return this->cstring;}
     //construtor explicito
-    explicit rule_of_five(const char* s = "") : cstring(nullptr)
+    explicit rule_of_five(const char*s  = "") : cstring(nullptr)
     { 
         if (s)
         {
@@ -66,19 +66,19 @@ int main()
     rule_of_five b = a;
     rule_of_five c(b);
 
-    cout<<"após fazer copias:"<<endl;
-    cout<<"a = "<<printrule(a)<<endl;
-    cout<<"b = "<<printrule(b)<<endl;
-    cout<<"c = "<<printrule(c)<<endl;
+    // cout<<"após fazer copias:"<<endl;
+    // cout<<"a = "<<printrule(a)<<endl;
+    // cout<<"b = "<<printrule(b)<<endl;
+    // cout<<"c = "<<printrule(c)<<endl;
 
-    rule_of_five d("Hello World!");
-    rule_of_five e = move(d);
-    rule_of_five f(move(e));
+    // rule_of_five d("Hello World!");
+    // rule_of_five e = move(d);
+    // rule_of_five f(move(e));
 
-    cout<<"após mover:"<<endl;
-    cout<<"d = "<<printrule(d)<<endl;
-    cout<<"e = "<<printrule(e)<<endl;
-    cout<<"f = "<<printrule(f)<<endl;
+    // cout<<"após mover:"<<endl;
+    // cout<<"d = "<<printrule(d)<<endl;
+    // cout<<"e = "<<printrule(e)<<endl;
+    // cout<<"f = "<<printrule(f)<<endl;
 
     return 0;
 }

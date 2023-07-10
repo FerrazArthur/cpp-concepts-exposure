@@ -23,14 +23,14 @@ public:
 };
 
 // exemplo do documento
-void f(B& b)
+void f(auto b)
 {
     b.funcao1();//Retorna "classe filha"
     
     auto b2 = b; //O slicing ocorre aqui
     auto b3(b); //também ocorre aqui
     //os métodos abaixo retornarão "classe base"
-    b2.funcao1(); 
+    b2.funcao1();
     b3.funcao1();
 }
 
